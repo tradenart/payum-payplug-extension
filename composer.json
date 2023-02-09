@@ -1,0 +1,43 @@
+{
+	"name": "tradenart/payum-payplug-extension",
+	"type": "symfony-bundle",
+	"version": "1.0",
+	"description": "Custom Payum Payplug extension",
+	"keywords" : [
+		"payment"
+	],
+	"homepage" : "https://payum.forma-pro.com",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Kotlyar Maksim",
+			"email" : "kotlyar.maksim@gmail.com"
+		}, {
+			"name" : "Payum project",
+			"homepage" : "https://payum.forma-pro.com/"
+		}, {
+			"name" : "Community contributions",
+			"homepage" : "https://github.com/Payum/AuthorizeNetAim/contributors"
+		}
+	],
+	"require" : {
+		"payplug/payplug-php": "^3.3",
+		"payum/core" : "^1.5"
+	},
+	"require-dev" : {
+		"payum/core" : "^1.5",
+		"php-http/guzzle6-adapter" : "^1.0"
+	},
+	"config" : {
+		"bin-dir" : "bin"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Tradenart\\Payum\\Payplug\\" : ""
+		}
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-master" : "1.5-dev"
+		}
+	}
+}
